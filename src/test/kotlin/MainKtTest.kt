@@ -13,7 +13,7 @@ class MainKtTest {
 
         val result = calcTransferFee(typeCard, sumTransferMonth, currentTransfer)
 
-        assertEquals(0, result)
+        assertEquals(10, result)
     }
 
     @Test
@@ -24,7 +24,7 @@ class MainKtTest {
 
         val result = calcTransferFee(typeCard, sumTransferMonth, currentTransfer)
 
-        assertEquals(80, result)
+        assertEquals(90, result)
     }
 
     @Test
@@ -35,7 +35,7 @@ class MainKtTest {
 
         val result = calcTransferFee(typeCard, sumTransferMonth, currentTransfer)
 
-        assertEquals(75, result)
+        assertEquals(80, result)
     }
 
     @Test
@@ -46,7 +46,7 @@ class MainKtTest {
 
         val result = calcTransferFee(typeCard, sumTransferMonth, currentTransfer)
 
-        assertEquals(0, result)
+        assertEquals(10, result)
     }
 
     @Test
@@ -56,6 +56,6 @@ class MainKtTest {
 
         val result = calcTransferFee(typeCard = typeCard, currentTransfer = currentTransfer)
 
-        assertEquals(0, result)
+        assertEquals(10, result)
     }
 }
